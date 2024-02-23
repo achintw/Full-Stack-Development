@@ -1,0 +1,100 @@
+
+*Javascript*
+variables -> let, const, var
+arrow functions, anonymous fns, higher order fns
+array and objects -> destructuring, rest, spread 
+scoping & hoisting
+conditional operators
+optional chaining
+array methods -> map, filter, reduce, sort
+event listeners
+intervals
+callbacks & promises
+async-await
+
+ 
+*Frontend -> React*
+vite react app creation
+functional components
+jsx -> return();
+import and export
+fragments
+styling components -> external, internal, modules
+props, proptypes, defaultprops
+state, useState
+conditional rendering
+rendering lists, keys
+evenhamdling (e)=>{}
+useEffect, useRef, useCallback
+form handling
+component lifecycle
+
+
+*Backend -> Express*
+routing in express, next keyword
+db integration in express
+CRUD in express
+sessions, cookies
+flash messages
+
+
+
+
+
+//------------------------------------------------------------------------------------------------------------------
+-> Flash messages
+install connect-flash
+make sure you put connect flash in a app.use fn
+kisi bhi route mein aap ko flash create karna hai
+kisi bhi doosre route par app.use chalane ka try karein
+
+
+AAP CONNECT FLASH KO USE NAHI KAR SAKTE BINA EXPRESS SESSION KE
+
+hum log chahte hai ki jab hum kisi route par jaye, jaise ki "/failed"
+waha par ek flash message banne, aur wo flash message hum logo ko
+"/" route par dikhe ejs mein
+
+flash message ka matlab server ke kisi route mein koi data banana
+aur uss data ko kisi aur route mein use karna
+
+
+// Why flash messages?
+flash messages are used so that we don't create global vars to 
+save/access data across routes & so that we don't pollute
+the global space.
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------
+-> Intermediate mongoDB
+step 1: step mongoose in users.js
+step 2: creating the format of entries in the model (schema)
+step 3: creating the model in the db
+step 4: require user.js in index.js (the routing file)
+//-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------
+-> Authorisation and authentication
+step1: install these packages:- 
+    npm i passport passport-local passport-local-mongoose mongoose express-sessions
+
+step2: write app.js code first in app.js file and write it after view engine
+and before logger
+
+step3: then setup users.js properly
+
+step4: in index.js try register first and then other codes as well
